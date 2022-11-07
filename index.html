@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .info {
+            background-color: pink;
+            color: green;
+            font-size: 20px;
+            width: 40%;
+            margin-top: 30px;
+            padding: 5px 0;
+            font-weight: bold;
+        }
+        input {
+            padding: 5px;
+            color: brown;
+            width: 20%;
+            font-size:20px;
+            border: 2px solid blue ;
+            margin: 0px 50px 0 15px;
+       
+        }
+        button {
+            color: white;
+            font-size: 20px;
+            padding: 5px 30px;
+            margin:15px 0 0 15px ;
+            background-color: orangered;
+            border: 1px solid orangered;
+            border-radius: 5%;
+            display: block;
+        }
+        .tab-pane{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+        .active{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>BÀI TẬP LÀM THÊM JS BUỔI 5</h1>
+    <!-- Thuế TNCN -->
+    <h2>BÀI TẬP: TÍNH THUẾ THU NHẬP CÁ NHÂN</h2>
+    <input id="name" type="text" placeholder="Nhập họ tên">
+    <input id="totalIncome" type="number" placeholder="Tổng thu nhập năm">
+    <input id="dependentNumber" type="number" placeholder="Số người phụ thuộc"> 
+    <button onclick="calculateTax()">Tính tiền</button>
+    <div id="show"></div>
+
+    <!--Tính tiền cáp  -->
+    <h2>Bài 2: Tính tiền cáp</h2>
+    <select name="" id="companyType" placeholder="Chọn loại khách hàng">
+        <option value="">Chọn loại khách hàng</option>
+        <option value="">Nhà Dân</option>
+        <option value="" class="active">Doanh Nghiệp</option>
+    </select>
+    <input id="cusId" type="text" placeholder="Nhập mã khách hàng" >
+    <input id="chanelNum" type="number" placeholder="Số kênh cao cấp"  >
+    <input type="number" class="tab-pane" placeholder="Số kết nối">
+    <button onclick="capBill()">Tính tiền Cap</button>
+
+    <script src="./index.js"></script>
+</body>
+</html>
